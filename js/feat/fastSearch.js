@@ -204,7 +204,7 @@ const btrFastSearch = {
 					return x
 				})
 				.filter(x => x.display)
-				.sort((a, b) => a.sort - b.sort).slice(0, 4)
+				.sort((a, b) => a.sort - b.sort).slice(0, 10)
 
 			// Move non-friend exacts to be last of the visible ones
 			if(matches.length && matches[0].name === search && !matches[0].user.IsFriend) {
